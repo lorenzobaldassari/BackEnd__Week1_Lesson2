@@ -8,14 +8,22 @@ public class Main {
         System.out.println("inserisi una stringa");
         String string1 = inputString1.nextLine();
         Boolean a = strinaPariDispari(string1);
-        System.out.println("la lunghezza della stringa e' pari?" +a);
+        if(a){
+        System.out.println("la lunghezza della stringa e' pari");
+        }else{
+        System.out.println("la lunghezza della stringa e' dispari");
+        }
 
 
         System.out.println("inserisci un anno");
         Scanner inputYear = new Scanner(System.in);
         int year = Integer.parseInt(inputYear.nextLine());
         Boolean b= annoBisestile(year);
-        System.out.println("l'anno e' bisestile?"+b);
+        if (a){
+            System.out.println("l'anno e' bisestile");
+        }else{
+            System.out.println("l'anno non e' bisestile");
+        }
     }
 
     public static Boolean strinaPariDispari(String string1) {
