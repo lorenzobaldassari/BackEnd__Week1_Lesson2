@@ -13,7 +13,8 @@ public class Main {
             String string1 = inputString.nextLine();
             if(string1 .equals(":q")) break;
             String[] a=string1.split("");
-            System.out.println(Arrays.toString(a));
+            String b= String.join(",",a);
+            System.out.println(b);
 
 
         }
